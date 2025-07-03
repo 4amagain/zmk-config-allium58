@@ -22,12 +22,27 @@
 
         quote {
             bindings = <&kp APOS>;
-            key-positions = <33 34>;
+            key-positions = <31 32>;
         };
 
-        layer4 {
+        bt_tog {
             bindings = <&mo 5>;
             key-positions = <50 51>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <31 33>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <33 32>;
+        };
+
+        braces {
+            bindings = <&sl 4>;
+            key-positions = <53 54>;
         };
     };
 
@@ -59,8 +74,8 @@
 &kp ESC     &kp N1  &kp N2  &kp N3     &kp N4               &kp N5                                                      &kp N6              &kp N7               &kp N8     &kp N9   &kp N0         &kp EQUAL
 &lt 3 TAB   &kp Q   &kp W   &kp F      &kp P                &kp B                                                       &kp J               &kp L                &kp U      &kp Y    &kp SEMICOLON  &lt 3 MINUS
 &kp RETURN  &kp A   &kp R   &kp S      &kp T                &kp G                                                       &kp M               &kp N                &kp E      &kp I    &kp O          &kp RETURN
-&kp LSHFT   &kp Z   &kp X   &kp C      &kp D                &kp V                   &kp LC(MINUS)    &kp LS(LC(MINUS))  &kp K               &kp H                &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
-                            &kp LCTRL  &mt LEFT_ALT RETURN  &mt LEFT_GUI BACKSPACE  &lt 2 SPACE      &lt 2 SPACE        &mt LCMD BACKSPACE  &mt LEFT_ALT RETURN  &kp LCTRL
+&kp LSHFT   &kp Z   &kp X   &kp C      &kp D                &kp V                   &kp LC(BACKSPACE)    &kp BACKSPACE  &kp K               &kp H                &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
+                            &kp LCTRL  &mt LEFT_ALT RETURN  &mt LEFT_GUI BACKSPACE  &lt 2 SPACE          &lt 2 SPACE    &mt LCMD BACKSPACE  &mt LEFT_ALT RETURN  &kp LCTRL
             >;
         };
 
@@ -75,11 +90,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &trans            &trans             &trans                &trans                 &trans                                     &studio_unlock      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))  &ext_power EP_TOG  &ext_power EP_OFF  &ext_power EP_ON
-&kp TILDE  &kp LG(GRAVE)     &none              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12                                    &none               &kp LA(LEFT)        &kp UP_ARROW       &kp LA(RIGHT)      &none              &kp C_VOLUME_UP
-&kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(F12)                                &kp LG(LEFT_ARROW)  &kp LEFT            &kp DOWN           &kp RIGHT          &kp LG(RIGHT)      &kp C_VOLUME_DOWN
-&kp HOME   &kp LG(Z)         &kp LG(X)          &kp LG(C)             &kp LG(V)              &none            &kp LC(GRAVE)    &kp F10  &trans              &kp MINUS           &kp PLUS           &kp PIPE           &kp BACKSLASH      &kp END
-                                                &kp LCTRL             &mt LEFT_ALT ENTER     &mt LCMD DELETE  &trans           &trans   &mt LCMD DELETE     &mt LEFT_ALT ENTER  &kp LCTRL
+&trans     &trans            &trans             &trans                &trans                 &trans                                 &studio_unlock      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))  &ext_power EP_TOG  &ext_power EP_OFF  &ext_power EP_ON
+&kp TILDE  &kp LG(GRAVE)     &none              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12                                &none               &kp LA(LEFT)        &kp UP_ARROW       &kp LA(RIGHT)      &none              &kp C_VOLUME_UP
+&kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(F12)                            &kp LG(LEFT_ARROW)  &kp LEFT            &kp DOWN           &kp RIGHT          &kp LG(RIGHT)      &kp C_VOLUME_DOWN
+&kp HOME   &kp LG(Z)         &kp LG(X)          &kp LG(C)             &kp LG(V)              &none        &kp LC(GRAVE)    &kp F10  &trans              &kp MINUS           &kp PLUS           &kp PIPE           &kp BACKSLASH      &kp END
+                                                &kp LCTRL             &mt LEFT_ALT ENTER     &kp LCMD     &trans           &trans   &kp LCMD            &mt LEFT_ALT ENTER  &kp LCTRL
             >;
         };
 
@@ -102,8 +117,8 @@
             >;
         };
 
-        adjust_layer {
-            display-name = "Adjust";
+        sticky_layer {
+            display-name = "Sticky";
 
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
@@ -113,16 +128,16 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans     &trans    &trans     &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                           &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
+&trans     &trans  &trans          &trans            &trans                &trans                     &trans       &trans                 &trans             &trans           &trans     &trans
+&kp GRAVE  &kp N1  &kp N2          &kp N3            &kp N4                &kp N5                     &kp N6       &kp N7                 &kp N8             &kp N9           &kp N0     &trans
+&kp F1     &kp F2  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp F6                     &trans       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT  &trans
+&kp F7     &kp F8  &kp F9          &kp F10           &kp F11               &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS              &kp EQUAL          &kp LBKT         &kp RBKT   &kp BSLH
+                                   &trans            &trans                &trans   &trans    &trans  &trans       &trans                 &trans
             >;
         };
 
         bt_and_layer_toggle {
-            display-name = "Adjust";
+            display-name = "BT";
 
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
