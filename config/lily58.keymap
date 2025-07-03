@@ -20,8 +20,8 @@
     combos {
         compatible = "zmk,combos";
 
-        quote {
-            bindings = <&kp APOS>;
+        double_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <31 32>;
         };
 
@@ -30,8 +30,8 @@
             key-positions = <50 51>;
         };
 
-        dash {
-            bindings = <&kp MINUS>;
+        underscore {
+            bindings = <&kp UNDER>;
             key-positions = <31 33>;
         };
 
@@ -40,9 +40,24 @@
             key-positions = <33 32>;
         };
 
-        braces {
+        braces_layer {
             bindings = <&sl 4>;
             key-positions = <53 54>;
+        };
+
+        single_quote {
+            bindings = <&kp APOS>;
+            key-positions = <28 27>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <28 26>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <27 26>;
         };
     };
 
