@@ -99,6 +99,16 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <38 47>;
         };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <13 22>;
+        };
+
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <37 48>;
+        };
     };
 
     keymap {
