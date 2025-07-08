@@ -40,8 +40,8 @@
             key-positions = <33 32>;
         };
 
-        braces_layer {
-            bindings = <&sl 4>;
+        numbers_layer {
+            bindings = <&mo 3>;
             key-positions = <53 54>;
         };
 
@@ -145,7 +145,7 @@
         };
 
         arrows+braces {
-            display-name = "Lower";
+            display-name = "arrows+braces";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
@@ -158,13 +158,13 @@
 &trans     &trans         &trans           &trans             &trans                 &trans                                   &studio_unlock      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))  &ext_power EP_TOG  &ext_power EP_OFF  &ext_power EP_ON
 &kp TILDE  &kp LG(GRAVE)  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp F12                                  &none               &kp LA(LEFT)        &kp UP_ARROW       &kp LA(RIGHT)      &none              &kp C_VOLUME_UP
 &kp GRAVE  &trans         &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp LS(F12)                              &kp LG(LEFT_ARROW)  &kp LEFT            &kp DOWN           &kp RIGHT          &kp LG(RIGHT)      &kp C_VOLUME_DOWN
-&kp HOME   &kp LG(Z)      &kp LG(X)        &kp LG(C)          &kp LG(V)              &none        &kp LG(GRAVE)    &kp LC(W)  &trans              &kp MINUS           &kp PLUS           &kp PIPE           &kp BACKSLASH      &kp END
+&kp HOME   &kp LG(Z)      &kp LG(X)        &kp LG(C)          &kp LG(V)              &none        &kp LG(GRAVE)    &kp LC(W)  &trans              &kp MINUS           &kp UNDER          &kp PIPE           &kp BACKSLASH      &kp END
                                            &kp LCTRL          &mt LEFT_ALT ENTER     &kp LCMD     &trans           &trans     &kp DELETE          &mt LEFT_ALT ENTER  &kp LCTRL
             >;
         };
 
-        num_pad {
-            display-name = "Raise";
+        numbers {
+            display-name = "numbers";
 
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
@@ -174,11 +174,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &trans                &trans                 &trans     &trans        &trans                               &trans         &trans        &trans        &trans        &trans        &trans
-&kp TILDE  &kp N1                &kp N2                 &kp N3     &kp N4        &kp N5                               &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &trans
-&kp GRAVE  &kp EXCLAMATION       &kp AT                 &kp HASH   &kp DOLLAR    &kp PERCENT                          &kp MINUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0        &kp PERIOD
-&trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK  &kp AMPS      &kp CARET    &trans       &trans     &kp KP_PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_SLASH  &kp DELETE
-                                                        &kp LCTRL  &kp LEFT_ALT  &kp LCMD     &kp SPACE    &kp SPACE  &kp BACKSPACE  &kp LEFT_ALT  &kp LCTRL
+&trans     &trans                &trans                 &trans        &trans        &trans                               &trans         &trans         &trans     &trans                &trans                 &trans
+&kp TILDE  &kp EXCL              &kp AT                 &kp HASH      &kp DOLLAR    &kp PERCENT                          &kp CARET      &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp GRAVE  &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3  &kp NUMBER_4  &kp N5                               &kp NUMBER_6   &kp N7         &kp N8     &kp N9                &kp N0                 &trans
+&trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK     &kp AMPS      &kp CARET    &trans       &trans     &trans         &kp MINUS      &kp PLUS   &kp PERIOD            &kp KP_SLASH           &kp DELETE
+                                                        &kp LCTRL     &kp LEFT_ALT  &kp LCMD     &kp SPACE    &kp SPACE  &kp BACKSPACE  &kp LEFT_ALT   &kp LCTRL
             >;
         };
 
