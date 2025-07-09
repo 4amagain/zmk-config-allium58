@@ -23,91 +23,125 @@
         double_quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <32 27>;
+            timeout-ms = <30>;
         };
 
         bt_tog {
             bindings = <&mo 5>;
             key-positions = <50 51>;
+            timeout-ms = <30>;
         };
 
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <31 33>;
+            timeout-ms = <30>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <33 32>;
+            timeout-ms = <30>;
         };
 
         numbers_layer {
             bindings = <&mo 3>;
             key-positions = <53 54>;
+            timeout-ms = <30>;
         };
 
         single_quote {
             bindings = <&kp APOS>;
             key-positions = <28 31>;
+            timeout-ms = <30>;
         };
 
         dash {
             bindings = <&kp MINUS>;
             key-positions = <28 26>;
+            timeout-ms = <30>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <27 26>;
+            timeout-ms = <30>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <26 33>;
+            timeout-ms = <30>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <25 34>;
+            timeout-ms = <30>;
         };
 
         left_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 19>;
+            timeout-ms = <30>;
         };
 
         right_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <40 45>;
+            timeout-ms = <30>;
         };
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <15 20>;
+            timeout-ms = <30>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <39 46>;
+            timeout-ms = <30>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <14 21>;
+            timeout-ms = <30>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <38 47>;
+            timeout-ms = <30>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <13 22>;
+            timeout-ms = <30>;
         };
 
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <37 48>;
+            timeout-ms = <30>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <15 20>;
+            timeout-ms = <30>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <16 15>;
         };
     };
 
@@ -117,11 +151,11 @@
         colemak {
             display-name = "colemak";
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3     &kp N4               &kp N5                                                      &kp N6                  &kp N7               &kp N8     &kp N9   &kp N0         &kp EQUAL
-&lt 3 TAB       &kp Q   &kp W   &kp F      &kp P                &kp G                                                       &kp J                   &kp L                &kp U      &kp Y    &kp SEMICOLON  &lt 3 MINUS
-&lt 3 ENTER     &kp A   &kp R   &kp S      &kp T                &kp D                                                       &kp H                   &kp N                &kp E      &kp I    &kp O          &lt 3 ENTER
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V                &kp B                   &kp LA(BACKSPACE)    &kp BACKSPACE  &kp K                   &kp M                &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                                &kp LCTRL  &mt LEFT_ALT RETURN  &mt LEFT_GUI BACKSPACE  &lt 2 SPACE          &lt 2 SPACE    &mt LEFT_GUI BACKSPACE  &mt LEFT_ALT RETURN  &kp LCTRL
+&kp ESC         &kp N1  &kp N2  &kp N3     &kp N4               &kp N5                                            &kp N6        &kp N7               &kp N8     &kp N9   &kp N0         &kp EQUAL
+&lt 3 TAB       &kp Q   &kp W   &kp F      &kp P                &kp G                                             &kp J         &kp L                &kp U      &kp Y    &kp SEMICOLON  &lt 3 MINUS
+&lt 3 ENTER     &kp A   &kp R   &kp S      &kp T                &kp D                                             &kp H         &kp N                &kp E      &kp I    &kp O          &lt 3 ENTER
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V                &kp B         &kp LA(BACKSPACE)    &kp BACKSPACE  &kp K         &kp M                &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                                &kp LCTRL  &mt LEFT_ALT RETURN  &kp LEFT_GUI  &lt 2 SPACE          &lt 2 SPACE    &kp LEFT_GUI  &mt LEFT_ALT RETURN  &kp LCTRL
             >;
         };
 
@@ -193,11 +227,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &trans           &trans  &trans    &trans      &trans                           &trans     &trans    &trans    &trans                &trans                 &trans
-&kp GRAVE  &kp N1           &kp N2  &kp N3    &kp N4      &kp N5                           &kp N6     &kp N7    &kp N8    &kp N9                &kp N0                 &trans
-&kp F10    &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPS  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp F11    &kp F1           &kp F2  &kp F3    &kp F4      &kp F5       &trans     &trans   &kp F6     &kp F7    &kp F8    &kp F9                &kp F10                &kp BSLH
-                                    &trans    &trans      &trans       &kp F10    &kp F11  &trans     &trans    &trans
+&trans     &trans        &trans        &trans        &trans        &trans                           &trans        &trans         &trans        &trans                &trans                 &trans
+&kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                      &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp F10    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                           &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &trans
+&kp F11    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5       &trans     &trans   &kp F6        &kp F7         &kp F8        &kp F9                &kp F10                &kp BSLH
+                                       &trans        &trans        &trans       &kp F10    &kp F11  &trans        &trans         &trans
             >;
         };
 
@@ -212,10 +246,10 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans          &mmv MOVE_UP    &trans           &trans        &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &msc SCRL_DOWN                          &trans  &trans  &trans  &trans  &trans  &trans
-&tog 1          &trans          &trans          &trans           &trans        &msc SCRL_UP    &mkp LCLK    &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                            &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP
+&trans          &trans          &mmv MOVE_UP    &trans           &trans        &trans                                  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN
+&trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &msc SCRL_DOWN                          &trans  &trans  &trans  &trans  &trans                &trans
+&tog 1          &trans          &trans          &trans           &trans        &msc SCRL_UP    &mkp LCLK    &mkp RCLK  &trans  &trans  &trans  &trans  &trans                &kp K_MUTE
                                                 &trans           &trans        &trans          &trans       &trans     &trans  &trans  &trans
             >;
         };
