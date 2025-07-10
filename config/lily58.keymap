@@ -144,6 +144,20 @@
             bindings = <&mo 4>;
             key-positions = <52 55>;
         };
+
+        you {
+            bindings = <&you>;
+            key-positions = <20 21>;
+        };
+    };
+
+    macros {
+        you: you {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp U>;
+            label = "YOU";
+        };
     };
 
     keymap {
@@ -191,9 +205,9 @@
 
             bindings = <
 &trans     &trans        &trans           &trans             &trans                 &trans                                      &studio_unlock      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))  &ext_power EP_TOG  &ext_power EP_OFF  &ext_power EP_ON
-&kp TILDE  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3       &kp NUMBER_4           &kp N5                                      &kp NUMBER_6        &kp N7              &kp N8             &kp N9             &kp N0             &kp C_VOLUME_UP
-&kp GRAVE  &kp PIPE      &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LS(F12)                                 &kp LG(LEFT_ARROW)  &kp LEFT            &kp UP_ARROW       &kp DOWN           &kp RIGHT          &kp C_VOLUME_DOWN
-&kp HOME   &trans        &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp F12         &kp LG(GRAVE)    &kp LC(W)  &kp UNDER           &kp MINUS           &kp PLUS           &kp PERIOD         &kp BACKSLASH      &kp END
+&kp TILDE  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3       &kp NUMBER_4           &kp N5                                      &kp NUMBER_6        &kp N7              &kp N8             &kp N9             &kp N0             &kp DOUBLE_QUOTES
+&kp GRAVE  &kp PIPE      &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp COLON                                   &kp LG(LEFT_ARROW)  &kp LEFT            &kp UP_ARROW       &kp DOWN           &kp RIGHT          &kp SINGLE_QUOTE
+&kp HOME   &trans        &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp SEMI        &kp LG(GRAVE)    &kp LC(W)  &kp UNDER           &kp MINUS           &kp PLUS           &kp PERIOD         &kp BACKSLASH      &kp END
                                           &kp LCTRL          &mt LEFT_ALT ENTER     &kp LEFT_SHIFT  &kp SPACE        &kp SPACE  &kp DELETE          &mt LEFT_ALT ENTER  &kp LCTRL
             >;
         };
