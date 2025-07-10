@@ -23,119 +23,126 @@
         double_quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <32 27>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         bt_tog {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <50 51>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <31 33>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <33 32>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         numbers_layer {
             bindings = <&mo 3>;
             key-positions = <53 54>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         single_quote {
             bindings = <&kp APOS>;
             key-positions = <28 31>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         dash {
             bindings = <&kp MINUS>;
             key-positions = <28 26>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <27 26>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <26 33>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <25 34>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         left_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 19>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         right_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <40 45>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <15 20>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <39 46>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <14 21>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <38 47>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <13 22>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <37 48>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
+            timeout-ms = <20>;
         };
 
         delete {
             bindings = <&kp DELETE>;
             key-positions = <28 27>;
+            timeout-ms = <20>;
+        };
+
+        caps {
+            bindings = <&mo 4>;
+            key-positions = <52 55>;
         };
     };
 
@@ -202,11 +209,22 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &trans                &trans                 &trans        &trans        &trans                               &trans        &trans         &trans     &trans                &trans                 &trans
-&kp TILDE  &kp EXCL              &kp AT                 &kp HASH      &kp DOLLAR    &kp PERCENT                          &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp SPACE  &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3  &kp NUMBER_4  &kp N5                               &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0                 &kp ENTER
-&trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK     &kp AMPS      &kp CARET    &trans       &trans     &trans        &kp MINUS      &kp PLUS   &kp PERIOD            &kp KP_SLASH           &kp DELETE
-                                                        &kp LCTRL     &kp LEFT_ALT  &trans       &kp SPACE    &kp SPACE  &trans        &kp LEFT_ALT   &kp LCTRL
+&trans     &trans        &trans        &trans        &trans        &trans                               &trans        &trans         &trans     &trans                &trans                 &trans
+&kp TILDE  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                          &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp SPACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                               &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0                 &kp ENTER
+&trans     &trans        &trans        &trans        &trans        &trans       &trans       &trans     &trans        &kp MINUS      &kp PLUS   &kp PERIOD            &kp KP_SLASH           &kp DELETE
+                                       &kp LCTRL     &kp LEFT_ALT  &trans       &kp SPACE    &kp SPACE  &trans        &kp LEFT_ALT   &kp LCTRL
+            >;
+        };
+
+        caps {
+            display-name = "CAPS";
+            bindings = <
+&kp ESC         &kp N1     &kp N2     &kp N3     &kp N4               &kp N5                                            &kp N6        &kp N7               &kp N8     &kp N9     &kp N0         &kp EQUAL
+&lt 3 TAB       &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)            &kp LS(G)                                         &kp LS(J)     &kp LS(L)            &kp LS(U)  &kp LS(Y)  &kp SEMICOLON  &lt 3 MINUS
+&lt 3 ENTER     &kp LS(A)  &kp LS(R)  &kp LS(S)  &kp LS(T)            &kp LS(D)                                         &kp LS(H)     &kp LS(N)            &kp LS(E)  &kp LS(I)  &kp LS(O)      &lt 3 ENTER
+&kp LEFT_SHIFT  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)            &kp LS(B)     &kp LA(BACKSPACE)    &kp BACKSPACE  &kp LS(K)     &kp LS(M)            &kp COMMA  &kp DOT    &kp FSLH       &kp RIGHT_SHIFT
+                                      &kp LCTRL  &mt LEFT_ALT RETURN  &kp LEFT_GUI  &lt 2 SPACE          &lt 2 SPACE    &kp LEFT_GUI  &mt LEFT_ALT RETURN  &kp LCTRL
             >;
         };
 
