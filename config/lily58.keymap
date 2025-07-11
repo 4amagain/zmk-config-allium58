@@ -239,11 +239,11 @@
         colemak {
             display-name = "colemak";
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3     &kp N4               &kp N5                                            &kp N6        &kp N7               &kp N8     &kp N9   &kp N0         &kp EQUAL
-&lt 3 TAB       &kp Q   &kp W   &kp F      &kp P                &kp G                                             &kp J         &kp L                &kp U      &kp Y    &kp SEMICOLON  &lt 3 MINUS
-&lt 3 ENTER     &kp A   &kp R   &kp S      &kp T                &kp D                                             &kp H         &kp N                &kp E      &kp I    &kp O          &lt 3 ENTER
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V                &kp B         &kp LA(BACKSPACE)    &kp BACKSPACE  &kp K         &kp M                &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                                &kp LCTRL  &mt LEFT_ALT RETURN  &kp LEFT_GUI  &lt 2 SPACE          &lt 2 SPACE    &kp LEFT_GUI  &mt LEFT_ALT RETURN  &kp LCTRL
+&kp ESC            &kp N1  &kp N2  &kp N3     &kp N4               &kp N5                                            &kp N6        &kp N7               &kp N8     &kp N9   &kp N0         &kp EQUAL
+&kp DOUBLE_QUOTES  &kp Q   &kp W   &kp F      &kp P                &kp G                                             &kp J         &kp L                &kp U      &kp Y    &kp SEMICOLON  &kp PIPE
+&kp SINGLE_QUOTE   &kp A   &kp R   &kp S      &kp T                &kp D                                             &kp H         &kp N                &kp E      &kp I    &kp O          &kp COLON
+&kp LEFT_SHIFT     &kp Z   &kp X   &kp C      &kp V                &kp B         &kp LA(BACKSPACE)    &kp BACKSPACE  &kp K         &kp M                &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                                   &kp LCTRL  &mt LEFT_ALT RETURN  &kp LEFT_GUI  &lt 2 SPACE          &lt 2 SPACE    &kp LEFT_GUI  &mt LEFT_ALT RETURN  &kp LCTRL
             >;
         };
 
@@ -277,11 +277,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &trans        &trans           &trans             &trans                 &trans                                      &studio_unlock      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))  &ext_power EP_TOG  &ext_power EP_OFF  &ext_power EP_ON
-&kp TILDE  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3       &kp NUMBER_4           &kp N5                                      &kp NUMBER_6        &kp N7              &kp N8             &kp N9             &kp N0             &kp DOUBLE_QUOTES
-&kp GRAVE  &kp PIPE      &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp COLON                                   &kp LG(LEFT_ARROW)  &kp LEFT            &kp UP_ARROW       &kp DOWN           &kp RIGHT          &kp SINGLE_QUOTE
-&kp HOME   &trans        &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp SEMI        &kp LG(GRAVE)    &kp LC(W)  &kp UNDER           &kp MINUS           &kp PLUS           &kp PERIOD         &kp BACKSLASH      &kp END
-                                          &kp LCTRL          &mt LEFT_ALT ENTER     &kp LEFT_SHIFT  &kp SPACE        &kp SPACE  &kp DELETE          &mt LEFT_ALT ENTER  &kp LCTRL
+&trans     &kp F12        &kp LS(F12)      &kp K_MUTE         &kp C_VOL_DN           &kp C_VOLUME_UP                              &studio_unlock      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))  &ext_power EP_TOG  &ext_power EP_OFF  &ext_power EP_ON
+&kp TILDE  &kp NUMBER_1   &kp NUMBER_2     &kp NUMBER_3       &kp NUMBER_4           &kp N5                                       &kp NUMBER_6        &kp N7              &kp N8             &kp N9             &kp N0             &kp DOUBLE_QUOTES
+&kp GRAVE  &kp PIPE       &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp COLON                                    &kp LG(LEFT_ARROW)  &kp LEFT            &kp UP_ARROW       &kp DOWN           &kp RIGHT          &kp SINGLE_QUOTE
+&kp HOME   &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp SEMI         &kp LG(GRAVE)    &kp LC(W)  &kp UNDER           &kp MINUS           &kp PLUS           &kp PERIOD         &kp BACKSLASH      &kp END
+                                           &kp LCTRL          &mt LEFT_ALT ENTER     &kp LEFT_SHIFT   &kp SPACE        &kp SPACE  &kp DELETE          &mt LEFT_ALT ENTER  &kp LCTRL
             >;
         };
 
