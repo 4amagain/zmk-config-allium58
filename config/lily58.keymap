@@ -218,6 +218,11 @@
             bindings = <&sc>;
             key-positions = <27 39>;
         };
+
+        nk {
+            bindings = <&nk>;
+            key-positions = <31 44>;
+        };
     };
 
     macros {
@@ -254,6 +259,13 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp C>;
             label = "SC";
+        };
+
+        nk: nk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp K>;
+            label = "NK";
         };
     };
 
