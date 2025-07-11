@@ -154,12 +154,12 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <20 32>;
+            key-positions = <32 31 33>;
         };
 
         enterL {
             bindings = <&kp ENTER>;
-            key-positions = <15 27>;
+            key-positions = <27 26 27 28>;
         };
 
         core {
@@ -208,6 +208,16 @@
             bindings = <&kp LG(DELETE)>;
             key-positions = <16 15>;
         };
+
+        ue {
+            bindings = <&ue>;
+            key-positions = <20 32>;
+        };
+
+        sc {
+            bindings = <&sc>;
+            key-positions = <27 39>;
+        };
     };
 
     macros {
@@ -230,6 +240,20 @@
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE &kp LBRC>;
             label = "ARROW_FUNC";
+        };
+
+        ue: ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp E>;
+            label = "UE";
+        };
+
+        sc: sc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C>;
+            label = "SC";
         };
     };
 
