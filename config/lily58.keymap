@@ -223,6 +223,11 @@
             bindings = <&nk>;
             key-positions = <31 44>;
         };
+
+        y. {
+            bindings = <&y_period>;
+            key-positions = <21 34>;
+        };
     };
 
     macros {
@@ -266,6 +271,13 @@
             #binding-cells = <0>;
             bindings = <&kp N &kp K>;
             label = "NK";
+        };
+
+        y_period: y_period {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp DOT>;
+            label = "Y_PERIOD";
         };
     };
 
