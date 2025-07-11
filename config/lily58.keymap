@@ -172,7 +172,7 @@
             key-positions = <10 9>;
         };
 
-        tab {
+        tabL {
             bindings = <&kp TAB>;
             key-positions = <14 26>;
         };
@@ -180,6 +180,11 @@
         k {
             bindings = <&kp K>;
             key-positions = <31 45>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <21 33>;
         };
     };
 
