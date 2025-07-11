@@ -151,6 +151,36 @@
             key-positions = <20 21>;
             timeout-ms = <30>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <20 32>;
+        };
+
+        enterL {
+            bindings = <&kp ENTER>;
+            key-positions = <15 27>;
+        };
+
+        core {
+            bindings = <&core>;
+            key-positions = <39 34 26>;
+        };
+
+        arrow_func {
+            bindings = <&arrow_func>;
+            key-positions = <10 9>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 26>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <31 45>;
+        };
     };
 
     macros {
@@ -159,6 +189,20 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp O &kp U>;
             label = "YOU";
+        };
+
+        core: core {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(C) &kp LS(O) &kp LS(R) &kp LS(E) &kp MINUS>;
+            label = "CORE";
+        };
+
+        arrow_func: arrow_func {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE &kp LBRC>;
+            label = "ARROW_FUNC";
         };
     };
 
