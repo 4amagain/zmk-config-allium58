@@ -186,6 +186,28 @@
             bindings = <&kp TAB>;
             key-positions = <21 33>;
         };
+
+        opt_backspace {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <18 19>;
+            timeout-ms = <30>;
+        };
+
+        opt_delete {
+            bindings = <&kp LA(DELETE)>;
+            key-positions = <16 15>;
+        };
+
+        cmd_backspace {
+            bindings = <&kp LG(BACKSPACE)>;
+            key-positions = <44 45>;
+            timeout-ms = <30>;
+        };
+
+        cmd_delete {
+            bindings = <&kp LG(DELETE)>;
+            key-positions = <16 15>;
+        };
     };
 
     macros {
