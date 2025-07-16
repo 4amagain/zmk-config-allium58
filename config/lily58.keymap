@@ -228,6 +228,11 @@
             bindings = <&kp ENTER>;
             key-positions = <26 27 28>;
         };
+
+        lk {
+            bindings = <&kp A>;
+            key-positions = <19 31>;
+        };
     };
 
     macros {
@@ -266,13 +271,6 @@
             label = "SC";
         };
 
-        nk: nk {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp K>;
-            label = "NK";
-        };
-
         y_period: y_period {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -285,6 +283,13 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
             label = "SELECT_LINE";
+        };
+
+        lk: lk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp K>;
+            label = "LK";
         };
     };
 
