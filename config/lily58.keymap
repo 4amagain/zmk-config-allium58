@@ -230,8 +230,18 @@
         };
 
         lk {
-            bindings = <&kp A>;
+            bindings = <&lk>;
             key-positions = <19 31>;
+        };
+
+        sticky_num {
+            bindings = <&sl 3>;
+            key-positions = <54 31 32>;
+        };
+
+        sticky_num_left {
+            bindings = <&sl 3>;
+            key-positions = <27 28 53>;
         };
     };
 
