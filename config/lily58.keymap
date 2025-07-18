@@ -201,7 +201,7 @@
 
         cmd_delete {
             bindings = <&kp LG(DELETE)>;
-            key-positions = <16 15>;
+            key-positions = <39 40>;
         };
 
         ue {
@@ -309,11 +309,11 @@
         colemak {
             display-name = "colemak";
             bindings = <
-&kp ESC            &kp N1  &kp N2  &kp N3     &kp N4               &kp N5                                            &kp N6        &kp N7               &kp N8     &kp N9   &kp N0         &kp EQUAL
-&kp DOUBLE_QUOTES  &kp Q   &kp W   &kp F      &kp P                &kp G                                             &kp J         &kp L                &kp U      &kp Y    &kp SEMICOLON  &kp PIPE
-&kp SINGLE_QUOTE   &kp A   &kp R   &kp S      &kp T                &kp D                                             &kp H         &kp N                &kp E      &kp I    &kp O          &kp COLON
-&kp LEFT_SHIFT     &kp Z   &kp X   &kp C      &kp V                &kp B         &kp LA(BACKSPACE)    &kp BACKSPACE  &kp K         &kp M                &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                                   &kp LCTRL  &mt LEFT_ALT RETURN  &kp LEFT_GUI  &lt 2 SPACE          &lt 2 SPACE    &kp LEFT_GUI  &mt LEFT_ALT RETURN  &kp LCTRL
+&kp ESC            &kp N1  &kp N2  &kp N3     &kp N4               &kp N5                                      &kp N6        &kp N7               &kp N8     &kp N9   &kp N0         &kp EQUAL
+&kp DOUBLE_QUOTES  &kp Q   &kp W   &kp F      &kp P                &kp G                                       &kp J         &kp L                &kp U      &kp Y    &kp SEMICOLON  &kp PIPE
+&kp SINGLE_QUOTE   &kp A   &kp R   &kp S      &kp T                &kp D                                       &kp H         &kp N                &kp E      &kp I    &kp O          &kp COLON
+&kp LEFT_SHIFT     &kp Z   &kp X   &kp C      &kp V                &kp B         &kp LG(TAB)    &kp BACKSPACE  &kp K         &kp M                &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                                   &kp LCTRL  &mt LEFT_ALT RETURN  &kp LEFT_GUI  &lt 2 SPACE    &lt 2 SPACE    &kp LEFT_GUI  &mt LEFT_ALT RETURN  &kp LCTRL
             >;
         };
 
