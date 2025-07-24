@@ -349,8 +349,8 @@
             bindings = <
 &trans     &kp F12        &kp LS(F12)      &kp K_MUTE         &kp C_VOL_DN           &kp C_VOLUME_UP                              &studio_unlock      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))  &ext_power EP_TOG  &ext_power EP_OFF  &ext_power EP_ON
 &kp TILDE  &kp NUMBER_1   &kp NUMBER_2     &kp NUMBER_3       &kp NUMBER_4           &kp N5                                       &kp NUMBER_6        &kp N7              &kp N8             &kp N9             &kp N0             &kp DOUBLE_QUOTES
-&kp GRAVE  &kp PIPE       &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp COLON                                    &kp LG(LEFT_ARROW)  &kp LEFT            &kp UP_ARROW       &kp DOWN           &kp RIGHT          &kp SINGLE_QUOTE
-&kp HOME   &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp SEMI         &kp LG(GRAVE)    &kp LC(W)  &kp UNDER           &kp MINUS           &kp PLUS           &kp PERIOD         &kp BACKSLASH      &kp END
+&kp GRAVE  &kp PIPE       &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &mkp MB1                                     &kp LG(LEFT_ARROW)  &kp LEFT            &kp UP_ARROW       &kp DOWN           &kp RIGHT          &kp SINGLE_QUOTE
+&kp HOME   &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &mkp MB2         &kp LG(GRAVE)    &kp LC(W)  &kp UNDER           &kp MINUS           &kp PLUS           &kp PERIOD         &kp BACKSLASH      &kp END
                                            &kp LCTRL          &mt LEFT_ALT ENTER     &kp LEFT_SHIFT   &kp SPACE        &kp SPACE  &kp DELETE          &mt LEFT_ALT ENTER  &kp LCTRL
             >;
         };
